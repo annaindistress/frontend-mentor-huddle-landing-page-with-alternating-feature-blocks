@@ -1,0 +1,44 @@
+.navigation {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+
+  &__link {
+    line-height: 1.93;
+    text-decoration: none;
+    color: @color-white;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    width: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 132px;
+    font-size: 14px;
+
+    &__item {
+      grid-column: 1 / 2;
+
+      &:nth-of-type(n + 4) {
+        grid-column: 2 / 3;
+      }
+
+      &:nth-of-type(4) {
+        grid-row: 1 / 2;
+      }
+
+      &:nth-of-type(5) {
+        grid-row: 2 / 3;
+      }
+    }
+  }
+}

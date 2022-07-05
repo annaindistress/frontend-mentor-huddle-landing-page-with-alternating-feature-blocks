@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    margin-right: 12px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: @color-white;
+    border: 1px solid @color-secondary-dark;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      color: @color-primary;
+      border-color: currentColor;
+    }
+  }
+
+  &__icon {
+    color: inherit;
+    fill: currentColor;
+  }
+}
