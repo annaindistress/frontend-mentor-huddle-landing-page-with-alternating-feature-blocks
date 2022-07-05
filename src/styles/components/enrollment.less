@@ -1,0 +1,34 @@
+.enrollment {
+  position: relative;
+  width: calc(100% - 24px);
+  max-width: 800px;
+  margin: 0 auto -67px;
+  padding: 40px 12px;
+  background-color: @color-white;
+  border-radius: 15px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, .0711);
+
+  &__title {
+    margin: 0 0 24px;
+    font-family: @font-fancy;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.67;
+    text-transform: capitalize;
+    color: @color-black;
+  }
+}
+
+@media (min-width: 1200px) {
+  .enrollment {
+    margin-bottom: -96px;
+    padding: 52px 128px;
+    text-align: center;
+
+    &__title {
+      margin-bottom: 32px;
+      font-size: 32px;
+      line-height: 1.88;
+    }
+  }
+}
