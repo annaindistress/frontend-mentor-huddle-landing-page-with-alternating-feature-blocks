@@ -1,0 +1,91 @@
+.about {
+  margin-bottom: 120px;
+
+  &__list {
+    display: grid;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    width: calc(100% - 40px);
+    max-width: 1232px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    padding: 304px 41px 33px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 256px;
+    border-radius: 16px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, .07);
+
+    &--grow {
+      background-image: url('../images/illustration-grow-together.svg');
+      background-position-y: 56px;
+    }
+
+    &--conversation {
+      background-image: url('../images/illustration-flowing-conversation.svg');
+      background-position-y: 65px;
+    }
+
+    &--users {
+      padding-left: 44px;
+      padding-right: 44px;
+      background-image: url('../images/illustration-your-users.svg');
+      background-position-y: 60px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    font-family: @font-fancy;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: @color-black;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    margin-bottom: 160px;
+
+    &__card {
+      padding: 150px 120px;
+      background-position-y: center;
+
+      &--grow {
+        padding-right: 50%;
+        background-position-x: calc(100% - 32px);
+        background-size: 406px auto;
+      }
+
+      &--conversation {
+        padding-left: 56%;
+        padding-right: 32px;
+        background-position-x: 120px;
+        background-size: 417px auto;
+      }
+
+      &--users {
+        padding-left: 120px;
+        padding-right: 50%;
+        background-position-x: calc(100% - 24px);
+        background-size: 420px auto;
+      }
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+  }
+}
