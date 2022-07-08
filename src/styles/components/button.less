@@ -9,6 +9,7 @@
     font-size: 10px;
     line-height: 1.4;
     color: @color-black;
+    background-color: @color-white;
     border-radius: 12px;
     box-shadow: 0 2px 7px rgba(0, 0, 0, .0954);
 
@@ -16,6 +17,17 @@
     &:focus {
       color: inherit;
     }
+  }
+
+  &--md {
+    max-width: 280px;
+    padding: 12px 60px;
+    font-size: 12px;
+    line-height: 1.36;
+    color: @color-white;
+    background-color: @color-primary;
+    border-radius: 20px;
+    box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, .1662);
   }
 
   &--lg {
@@ -43,6 +55,13 @@
       padding: 13px 65px 16px;
       border-radius: 24px;
       box-shadow: 0 3px 11px rgba(0, 0, 0, .0954);
+    }
+
+    &--md {
+      max-width: 280px;
+      padding: 18px 69px 19px;
+      font-size: 14px;
+      border-radius: 28px;
     }
 
     &--lg {
