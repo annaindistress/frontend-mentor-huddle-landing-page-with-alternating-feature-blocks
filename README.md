@@ -23,9 +23,24 @@ Users should be able to:
 
 ### Screenshot
 
+![](./screenshot.png)
+
+### Links
+
+- [Solution URL](https://github.com/annaindistress/frontend-mentor-clipboard-landing-page)
+- [Live Site URL](https://annaindistress.github.io/frontend-mentor-clipboard-landing-page/)
+
 ## My process
 
 ### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- Grid
+- Mobile-first workflow
+- Gulp
+- Less
+- SVG Sprite
 
 ## Author
 
